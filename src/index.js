@@ -1,0 +1,1 @@
+alert("Debug alert: This page works!")
