@@ -3,8 +3,9 @@ import {home} from "./home.js";
 import {menu} from "./menu.js";
 import {about} from "./about.js";
 
-init();
-main();
+ init();
+ main();
+
 
 function main(){
     let tabs=[...document.querySelectorAll(".item")];
@@ -24,17 +25,3 @@ function main(){
     }
 }
 
-function elementFactory(e, text, eClass) {
-    let element = document.createElement(e);
-    if (text) {
-      element.innerText = text;
-    }
-
-    if (eClass) {
-      element.classList.add(eClass);
-    }
-
-    return element;
-  }
-
-export {elementFactory};
