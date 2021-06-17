@@ -2,6 +2,7 @@ import { init } from "./init.js";
 import { home } from "./home.js";
 import { menu } from "./menu.js";
 import { about } from "./about.js";
+import "./style.css"
 
 init();
 main();
