@@ -9,8 +9,8 @@ body {
   background-image: linear-gradient(0deg,rgb(49, 47, 33),rgb(13, 13, 31));
   background-repeat: repeat-x;
 }
-.para,.space{
-  color:hsl(240, 36%, 85%);;
+.para{
+  color:hsl(240, 36%, 85%);
 }
 
 .header {
@@ -97,6 +97,7 @@ body {
 
 .menu-text {
   padding: 3rem;
+  color:hsl(240, 36%, 85%);
 }
 
 /*about*/
@@ -104,4 +105,5 @@ body {
   padding-bottom: 2rem;
   width: 80%;
   margin: 0 auto;
+  color:hsl(240, 36%, 85%);
 }
