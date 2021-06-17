@@ -1,8 +1,8 @@
-import { init } from "./init.js";
-import { home } from "./home.js";
-import { menu } from "./menu.js";
-import { about } from "./about.js";
-import "./style.css"
+import init from "./components/init.js";
+import home from "./components/home.js";
+import menu from "./components/menu.js";
+import about from "./components/about.js";
+import "./style.css";
 
 init();
 main();
@@ -12,6 +12,7 @@ function main() {
   for (const tab of tabs) {
     tab.addEventListener("click", link);
   }
+
   function link(e) {
     const pageName = e.target.innerText.toLowerCase();
     switch (pageName) {
