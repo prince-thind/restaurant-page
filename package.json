@@ -3,7 +3,6 @@
  "version": "1.0.0",
  "description": "Restaurant Page Generated dynamically using JS",
  "scripts": {
-  "test": "echo \"Error: no test specified\" && exit 1",
   "watch": "webpack --watch",
   "start": "webpack serve --open",
   "server": "node server.js",
