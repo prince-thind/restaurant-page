@@ -4,4 +4,4 @@ Restaurant Page is a basic javascript app that utilizes the power of vanila JS t
 
 # Link
 
-[Here](https://prince-thind.github.io/restaurant-page/latest)
+1. [Latest](https://prince-thind.github.io/restaurant-page/latest)
