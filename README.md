@@ -1,7 +1,8 @@
 # Restaurant-Page
 
-Restaurant Page is a basic javascript app that utilizes the power of vanila JS to generate dynamic content on a webpage. This project has been solely built for learning purposes only and as such does not really contain something very spectacular. The content on the page tries to mimic React+React Routes functionality.
+Restaurant Page is a basic javascript webpage that utilizes the power of vanilla JS to generate dynamic content.This project has been solely built for learning purposes and therefore does not contain something very spectacular. The aim of the webpage is to to mimic React+React Routes functionality.
 
 # Link
 
 1. [Latest](https://prince-thind.github.io/restaurant-page/latest)
+2. [v1.0.0](https://prince-thind.github.io/restaurant-page/v1.0.0)
