@@ -1,16 +1,28 @@
-import generateHome from "../components/home.js";
+import generateHome from "../pages/home.js";
 import { createElement } from "./utils.js";
 
-function init() {
-  const parent = document.querySelector("#root");
-  parent.innerHTML = "";
+export default function init() {
+  const root = document.querySelector("#root");
+  root.innerHTML = "";
 
+  const header = generateHeader();
+
+  const main = generateMainTag();
+
+  const footer = generateFooter();
+
+  root.append(header);
+  root.append(main);
+  root.append(footer);
+
+  generateHome();
+}
+
+function generateHeader() {
   const header = createElement({ tag: "header", elementClass: "header" });
-  parent.append(header);
   const h1 = createElement({ tag: "h1", text: "Shady Burgers" });
-  header.append(h1);
   const nav = createElement({ tag: "nav", elementClass: "nav" });
-  header.append(nav);
+  nav.id = "nav";
 
   const tab1 = createElement({
     tag: "div",
@@ -27,19 +39,26 @@ function init() {
     elementClass: "item",
     text: "About",
   });
+
   nav.append(tab1, tab2, tab3);
 
-  const main = createElement({ tag: "main", elementClass: "main" });
-  parent.append(main);
+  header.append(h1);
+  header.append(nav);
 
-  const footer = createElement({
+  return header;
+}
+
+function generateFooter() {
+  return createElement({
     tag: "footer",
     elementClass: "footer",
     text: "Established C 2014",
   });
-  parent.append(footer);
-
-  generateHome();
 }
 
-export default init;
+function generateMainTag() {
+  const main = createElement({ tag: "main", elementClass: "main" });
+  main.id = "main";
+
+  return main;
+}

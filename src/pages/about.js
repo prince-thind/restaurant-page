@@ -1,8 +1,7 @@
 import { createElement, generateRandomText } from "../lib/utils.js";
 
 function about() {
-  const parent = document.querySelector("#root");
-  const main = document.querySelector(".main");
+  const main = document.querySelector("#main");
   main.innerHTML = "";
 
   for (let i = 0; i < 5; i++) {
@@ -11,6 +10,7 @@ function about() {
       elementClass: "para",
       text: generateRandomText(3),
     });
+
     main.append(para);
   }
 }

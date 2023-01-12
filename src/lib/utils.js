@@ -12,11 +12,11 @@ function createElement({ tag, elementClass, text }) {
 }
 
 function generateRandomText(n) {
-  const txt =
+  const text =
     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, modi? Veritatis eos cupiditate rem\
   debitis pariatur neque sequi! Impedit rerum facilis nobis dolore tempora neque adipisci ipsam\
   perspiciatis debitis natus.";
-  return txt.repeat(n);
+  return text.repeat(n);
 }
 
 export { createElement, generateRandomText };
