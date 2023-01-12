@@ -1,8 +1,9 @@
-import init from "./components/init.js";
+import "./style.css";
+
+import init from "./lib/initialize.js";
 import home from "./components/home.js";
 import menu from "./components/menu.js";
 import about from "./components/about.js";
-import "./style.css";
 
 init();
 main();
