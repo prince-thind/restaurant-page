@@ -8,7 +8,7 @@ function about() {
     const para = createElement({
       tag: "p",
       elementClass: "para",
-      text: generateRandomText(3),
+      text: generateRandomText(Math.trunc(Math.random() * 2) + 1),
     });
 
     main.append(para);

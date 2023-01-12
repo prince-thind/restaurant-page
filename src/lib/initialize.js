@@ -20,25 +20,25 @@ export default function init() {
 
 function generateHeader() {
   const header = createElement({ tag: "header", elementClass: "header" });
-  const h1 = createElement({ tag: "h1", text: "Shady Burgers" });
+  const h1 = createElement({
+    tag: "h1",
+    text: "Shady Burgers",
+    elementClass: "heading",
+  });
+
   const nav = createElement({ tag: "nav", elementClass: "nav" });
   nav.id = "nav";
 
-  const tab1 = createElement({
-    tag: "div",
-    elementClass: "item",
-    text: "Home",
-  });
-  const tab2 = createElement({
-    tag: "div",
-    elementClass: "item",
-    text: "Menu",
-  });
-  const tab3 = createElement({
-    tag: "div",
-    elementClass: "item",
-    text: "About",
-  });
+  const generateNavTab = (name) =>
+    createElement({
+      tag: "div",
+      elementClass: "nav-item",
+      text: name,
+    });
+
+  const tab1 = generateNavTab("Home");
+  const tab2 = generateNavTab("Menu");
+  const tab3 = generateNavTab("About");
 
   nav.append(tab1, tab2, tab3);
 

@@ -6,14 +6,14 @@ function menu() {
 
   const frame = createElement({ tag: "div", elementClass: "frame" });
 
-  for (let i = 1; i <= 9; i++) {
+  for (let i = 0; i < 19; i++) {
     const cell = createElement({ tag: "div", elementClass: "cell" });
     const cellImg = createElement({ tag: "img", elementClass: "cell-img" });
     cellImg.src = "images/burger.webp";
     const cellCap = createElement({
       tag: "div",
-      elementClass: "cell-cap",
-      text: "caption",
+      elementClass: "cell-caption",
+      text: `Burger ${i + 1}`,
     });
 
     frame.append(cell);
