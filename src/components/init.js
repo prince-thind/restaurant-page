@@ -1,7 +1,7 @@
 import generateHome from "./home.js";
 
 function init() {
-  const parent = document.querySelector("#content");
+  const parent = document.querySelector("#root");
   parent.innerHTML = "";
 
   const header = elementFactory("header", "", "header");

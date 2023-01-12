@@ -1,32 +1,24 @@
 {
- "name": "restaurant-page",
- "version": "1.0.0",
- "description": "Restaurant Page Generated dynamically using JS",
- "scripts": {
-  "watch": "webpack --watch",
-  "start": "webpack serve --open",
-  "server": "node server.js",
-  "build": "webpack"
- },
- "repository": {
-  "type": "git",
-  "url": "git+https://github.com/Prince-Thind/restaurant-page.git"
- },
- "keywords": [],
- "author": "Prince-Thind",
- "license": "AGPL-3.0",
- "bugs": {
-  "url": "https://github.com/Prince-Thind/restaurant-page/issues"
- },
- "homepage": "https://github.com/Prince-Thind/restaurant-page#readme",
- "devDependencies": {
-  "css-loader": "^5.2.6",
-  "express": "^4.17.1",
-  "html-webpack-plugin": "^5.3.1",
-  "style-loader": "^2.0.0",
-  "webpack": "^5.39.1",
-  "webpack-cli": "^4.7.2",
-  "webpack-dev-middleware": "^5.0.0"
- },
- "private": true
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "Restaurant Page Generated dynamically using JS",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prince-Thind/restaurant-page.git"
+  },
+  "keywords": [],
+  "author": "Prince-Thind",
+  "bugs": {
+    "url": "https://github.com/Prince-Thind/restaurant-page/issues"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0"
+  }
 }
